@@ -1,0 +1,76 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    background-color: rgb(69, 65, 65);
+    .header-row{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        .sections{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            .content{
+                color: #fff;
+                font-weight: 500;
+                font-size: 12px;
+            }
+        }
+    }
+}
+.navbar-container{
+    width: 100%;
+    background-color: black;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid red;
+    .navbar-content{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .sections{
+            color: #fff;
+            span{
+                color:red;
+            }
+        }
+        .search-box{
+            .input-select {
+                height: 47px;
+                width: 115px;
+                border-radius: 23px;
+                border-right: none;
+                padding-left: 10px;
+                border-color: #D7D5D5;
+                appearance: none;
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+                background-repeat: no-repeat;
+                background-position: right 0.6rem center;
+                background-size: 1em;
+                padding-right: 20px;
+                z-index: 100;
+                position: relative;
+            }
+            .table-search {
+                width: 300px;
+                height: 45px;
+                border: 1px solid #D7D5D5;
+                border-radius: 0px 23px 23px 0px;
+                padding-left: 50px;
+                position: relative;
+                right: 6%;
+                top: 0px;
+                border-left: none;
+                padding-right: 40px;
+                background: url(/home/assets/icons/input_search_icon.svg), #fff;
+                background-size: auto;
+                background-repeat: no-repeat;
+                background-position: 95%;
+            }
+        }
+    }
+}

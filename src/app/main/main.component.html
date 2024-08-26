@@ -1,0 +1,38 @@
+<div class="main">
+    <div class="main-page-1">
+        <div *ngFor="let data of [1,2,3]" class="content">
+            <img src="../../assets/product01.png" alt="">
+        </div>
+    </div>
+    <div class="main-page-2">
+        <div class="headings">
+            <div class="name">New Product</div>
+            <div class="tabbing">
+                <div *ngFor="let tab of productList; let i = index" class="tab"
+                    [ngClass]="{'active': selectedTabIndex === i }" (click)="setSelectedTab(i)">
+                    {{ tab }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="main-page-3">
+        <div *ngFor="let data of [1,2,3,4]" class="content">
+            <div style="text-align: end;">
+                <span style="border: 1px solid red; color: red; font-size: 10px; padding: 5px 10px;">30%</span> <span style="border:1px solid red; background-color: red; color:white; font-size: 10px;  padding: 5px 10px;">New</span>
+            </div>
+             <div>
+                 <img src="../../assets/product01.png" alt="">
+             </div>
+             <div style="display: flex; align-items: center; flex-direction: column;">
+                 <div style="color: grey; font-size: 10px;">Category</div>
+                 <div style="font-weight: 500; color:black; margin-top: 12px;">Product Name Goes Here</div>
+                 <div style="font-weight: 600; color: red; margin-top: 12px;">$999.00</div>
+                  
+                 <div style="display: flex;">
+     
+                 </div>
+             </div>
+        </div>
+    </div>
+</div>
